@@ -4,10 +4,6 @@
 //
 
 #import "UIImagePickerController+Block.h"
-
-
-
-#import "UIImagePickerController+Block.h"
 #import <objc/runtime.h>
 
 static char finalizationBlockKey;

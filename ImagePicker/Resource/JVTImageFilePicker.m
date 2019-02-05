@@ -5,7 +5,7 @@
 //  Created by Matan Cohen on 1/13/16.
 //  Copyright © 2016 Matan Cohen. All rights reserved.
 //
-
+// Users/swatee/Documents/External/JVTImageFilePicker/Vendor/UIImagePickerController+Block.h
 #import "JVTImageFilePicker.h"
 #import "UIImagePickerController+Block.h"
 #import "JVTWorker.h"
@@ -55,10 +55,10 @@
     [self addBackgroundDimmed];
     [self showBackgroundDimmed];
     
-    NSString *photoLibraryTxt = @"Photo Library";
-    NSString *takePhotoOrVideoTxt = @"Take Photo";
-    NSString *uploadFileTxt = @"Upload File";
-    NSString *cancelTxt = @"Cancel";
+    NSString *photoLibraryTxt = self.photoLibraryTxt ? self.photoLibraryTxt : @"Photo Library";
+    NSString *takePhotoOrVideoTxt = self.takePhotoOrVideoTxt ? self.takePhotoOrVideoTxt : @"Take Photo";
+    NSString *uploadFileTxt = self.uploadFileTxt ? self.uploadFileTxt :@"Upload File";
+    NSString *cancelTxt = self.cancelTxt ? self.cancelTxt : @"Cancel";
     self.actionSheet = [[JVTActionSheetView alloc] init];
     self.actionSheet.delegate = self;
     

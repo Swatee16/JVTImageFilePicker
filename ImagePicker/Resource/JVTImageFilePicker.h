@@ -22,6 +22,10 @@
 
 @interface JVTImageFilePicker : NSObject <UIDocumentPickerDelegate, UIDocumentMenuDelegate, JVTImagePreviewVCDelegate>
 @property (nonatomic,assign) CGSize imageResizeSize;
+@property (nonatomic, strong) NSString* photoLibraryTxt;
+@property (nonatomic, strong) NSString* takePhotoOrVideoTxt;
+@property (nonatomic, strong) NSString* uploadFileTxt;
+@property (nonatomic, strong) NSString* cancelTxt;
 @property (assign) bool isFilePickerEnabled; // Default is YES.
 @property (weak) id<FilesPickerDelegate> delegate;
 
